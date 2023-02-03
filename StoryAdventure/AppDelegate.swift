@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ChooseYourOwnAdventure
+//  StoryAdventure
 //
 //  Created by Андрей Фроленков on 2.02.23.
 //

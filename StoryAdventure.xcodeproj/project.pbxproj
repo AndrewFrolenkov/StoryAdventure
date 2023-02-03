@@ -13,10 +13,13 @@
 		5209CD32298C57F7004D6543 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5209CD30298C57F7004D6543 /* Main.storyboard */; };
 		5209CD34298C57F9004D6543 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5209CD33298C57F9004D6543 /* Assets.xcassets */; };
 		5209CD37298C57F9004D6543 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5209CD35298C57F9004D6543 /* LaunchScreen.storyboard */; };
+		5209CD42298C58BD004D6543 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209CD41298C58BD004D6543 /* Story.swift */; };
+		5209CD44298C58CD004D6543 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209CD43298C58CD004D6543 /* StoryBrain.swift */; };
+		5209CD46298C5B69004D6543 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5209CD45298C5B69004D6543 /* StackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5209CD27298C57F7004D6543 /* ChooseYourOwnAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChooseYourOwnAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5209CD27298C57F7004D6543 /* StoryAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5209CD2A298C57F7004D6543 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5209CD2C298C57F7004D6543 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5209CD2E298C57F7004D6543 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		5209CD33298C57F9004D6543 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5209CD36298C57F9004D6543 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5209CD38298C57F9004D6543 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5209CD41298C58BD004D6543 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		5209CD43298C58CD004D6543 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		5209CD45298C5B69004D6543 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +46,7 @@
 		5209CD1E298C57F7004D6543 = {
 			isa = PBXGroup;
 			children = (
-				5209CD29298C57F7004D6543 /* ChooseYourOwnAdventure */,
+				5209CD29298C57F7004D6543 /* StoryAdventure */,
 				5209CD28298C57F7004D6543 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +54,58 @@
 		5209CD28298C57F7004D6543 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5209CD27298C57F7004D6543 /* ChooseYourOwnAdventure.app */,
+				5209CD27298C57F7004D6543 /* StoryAdventure.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5209CD29298C57F7004D6543 /* ChooseYourOwnAdventure */ = {
+		5209CD29298C57F7004D6543 /* StoryAdventure */ = {
 			isa = PBXGroup;
 			children = (
 				5209CD2A298C57F7004D6543 /* AppDelegate.swift */,
 				5209CD2C298C57F7004D6543 /* SceneDelegate.swift */,
-				5209CD2E298C57F7004D6543 /* ViewController.swift */,
-				5209CD30298C57F7004D6543 /* Main.storyboard */,
+				5209CD3E298C586A004D6543 /* Controller */,
+				5209CD3F298C5875004D6543 /* Model */,
+				5209CD40298C58A0004D6543 /* View */,
 				5209CD33298C57F9004D6543 /* Assets.xcassets */,
 				5209CD35298C57F9004D6543 /* LaunchScreen.storyboard */,
 				5209CD38298C57F9004D6543 /* Info.plist */,
 			);
-			path = ChooseYourOwnAdventure;
+			path = StoryAdventure;
+			sourceTree = "<group>";
+		};
+		5209CD3E298C586A004D6543 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5209CD2E298C57F7004D6543 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5209CD3F298C5875004D6543 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5209CD41298C58BD004D6543 /* Story.swift */,
+				5209CD43298C58CD004D6543 /* StoryBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5209CD40298C58A0004D6543 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5209CD30298C57F7004D6543 /* Main.storyboard */,
+				5209CD45298C5B69004D6543 /* StackView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5209CD26298C57F7004D6543 /* ChooseYourOwnAdventure */ = {
+		5209CD26298C57F7004D6543 /* StoryAdventure */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5209CD3B298C57F9004D6543 /* Build configuration list for PBXNativeTarget "ChooseYourOwnAdventure" */;
+			buildConfigurationList = 5209CD3B298C57F9004D6543 /* Build configuration list for PBXNativeTarget "StoryAdventure" */;
 			buildPhases = (
 				5209CD23298C57F7004D6543 /* Sources */,
 				5209CD24298C57F7004D6543 /* Frameworks */,
@@ -82,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = ChooseYourOwnAdventure;
+			name = StoryAdventure;
 			productName = ChooseYourOwnAdventure;
-			productReference = 5209CD27298C57F7004D6543 /* ChooseYourOwnAdventure.app */;
+			productReference = 5209CD27298C57F7004D6543 /* StoryAdventure.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5209CD22298C57F7004D6543 /* Build configuration list for PBXProject "ChooseYourOwnAdventure" */;
+			buildConfigurationList = 5209CD22298C57F7004D6543 /* Build configuration list for PBXProject "StoryAdventure" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5209CD26298C57F7004D6543 /* ChooseYourOwnAdventure */,
+				5209CD26298C57F7004D6543 /* StoryAdventure */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5209CD44298C58CD004D6543 /* StoryBrain.swift in Sources */,
 				5209CD2F298C57F7004D6543 /* ViewController.swift in Sources */,
 				5209CD2B298C57F7004D6543 /* AppDelegate.swift in Sources */,
 				5209CD2D298C57F7004D6543 /* SceneDelegate.swift in Sources */,
+				5209CD42298C58BD004D6543 /* Story.swift in Sources */,
+				5209CD46298C5B69004D6543 /* StackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andrewIssues.ChooseYourOwnAdventure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewIssues.StoryAdventure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -328,7 +364,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.andrewIssues.ChooseYourOwnAdventure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewIssues.StoryAdventure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5209CD22298C57F7004D6543 /* Build configuration list for PBXProject "ChooseYourOwnAdventure" */ = {
+		5209CD22298C57F7004D6543 /* Build configuration list for PBXProject "StoryAdventure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5209CD39298C57F9004D6543 /* Debug */,
@@ -348,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5209CD3B298C57F9004D6543 /* Build configuration list for PBXNativeTarget "ChooseYourOwnAdventure" */ = {
+		5209CD3B298C57F9004D6543 /* Build configuration list for PBXNativeTarget "StoryAdventure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5209CD3C298C57F9004D6543 /* Debug */,
